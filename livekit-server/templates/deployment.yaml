@@ -61,7 +61,7 @@ spec:
               value: /etc/lkcert/tls.key
             {{- end }}
             {{- with .Values.extraEnvVars }}
-              {{ toYaml . | indent 12 }}
+              {{- toYaml . | indent 12 }}
             {{- end }}
           ports:
             - name: http
